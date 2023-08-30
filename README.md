@@ -1,4 +1,4 @@
-# screenmatch
+# ScreenMatch
 
 >Status do projeto: em progresso!
 
