@@ -1,3 +1,5 @@
+package br.com.otavioms.screenmatch.principal;
+
 import br.com.otavioms.screenmatch.calculos.CalculadoraDeTempo;
 import br.com.otavioms.screenmatch.calculos.FiltroRecomendacao;
 import br.com.otavioms.screenmatch.modelos.Episodio;
@@ -12,12 +14,12 @@ public class Principal {
         Filme filme1 = new Filme("Uma Noite de Crime", 2013);
         filme1.setDuracaoEmMinutos(86);
         filme1.setIncluidoNoPlano(true);
-        filme1.avalia(9);
-        filme1.avalia(8);
-        filme1.avalia(9);
+        filme1.avalia(10);
+        filme1.avalia(10);
+        filme1.avalia(10);
         filme1.exibeFichaTecnica();
 
-        Serie serie1 = new Serie("The walking dead", 2000);
+        Serie serie1 = new Serie("The walking dead", 2010);
         serie1.exibeFichaTecnica();
         serie1.setTemporadas(12);
         serie1.setEpisodiosPorTemporada(10);
