@@ -5,6 +5,7 @@ import br.com.otavioms.screenmatch.modelos.Serie;
 import br.com.otavioms.screenmatch.modelos.Titulo;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class PrincipalComListas {
     public static void main(String[] args) {
@@ -33,5 +34,15 @@ public class PrincipalComListas {
             }
 
         }
-    }
+
+        ArrayList<String> buscaPorArtista = new ArrayList<>();
+        buscaPorArtista.add("Adam Sandler");
+        buscaPorArtista.add("Otávio Medeiros");
+        buscaPorArtista.add("Maria Clara");
+        Collections.sort(buscaPorArtista);
+        System.out.println(buscaPorArtista);
+
+        Collections.sort(lista);
+        System.out.println("Lista de títulos ordenado: " + lista);
+     }
 }
