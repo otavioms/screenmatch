@@ -10,6 +10,7 @@ public class CalculadoraDeTempo {
     public int getTempoTotal() {
         return tempoTotal;
     }
+
     /*
         public void inclui(Filme f) {
             tempoTotal += f.getDuracaoEmMinutos();

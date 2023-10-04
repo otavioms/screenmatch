@@ -4,8 +4,7 @@ import br.com.otavioms.screenmatch.modelos.Filme;
 import br.com.otavioms.screenmatch.modelos.Serie;
 import br.com.otavioms.screenmatch.modelos.Titulo;
 
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.*;
 
 public class PrincipalComListas {
     public static void main(String[] args) {
@@ -18,12 +17,12 @@ public class PrincipalComListas {
         Serie serie1 = new Serie("The walking dead", 2010);
         serie1.avalia(7);
 
-        ArrayList<Titulo> lista = new ArrayList<>();
+        List<Titulo> lista = new LinkedList<>();
         lista.add(filme1);
         lista.add(filme2);
         lista.add(filme3);
         lista.add(serie1);
-        for (Titulo item: lista) {
+        for (Titulo item : lista) {
             System.out.println(item.getNome());
             if (item instanceof Filme) {
                 Filme filme = (Filme) item;
@@ -41,8 +40,12 @@ public class PrincipalComListas {
         buscaPorArtista.add("Maria Clara");
         Collections.sort(buscaPorArtista);
         System.out.println(buscaPorArtista);
+        System.out.println("Depois da ordenação: " + buscaPorArtista);
 
         Collections.sort(lista);
         System.out.println("Lista de títulos ordenado: " + lista);
-     }
+        //Comparator.comparing serve para comparar sem mudar o
+        lista.sort(Comparator.comparing(Titulo::getAnoDeLancamento));
+        System.out.println("Lista ordenada por ano de lançamento: " + lista);
+    }
 }

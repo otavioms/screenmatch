@@ -1,6 +1,6 @@
 package br.com.otavioms.screenmatch.modelos;
 
-public class Titulo implements  Comparable<Titulo> {
+public class Titulo implements Comparable<Titulo> {
     private String nome;
     private int anoDeLancamento;
     private int duracaoEmMinutos;
